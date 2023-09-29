@@ -1,9 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// https://nuxt.com/modules
+import vuetify from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  vite: {
+    ssr:{
+      noExternal: ['vuetify']
+    }
+  },
   modules: [
-    '@nuxtjs/tailwindcss'
+    async (options, nuxt) => {
+      // @ts-ignore
+      nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
+        vuetify()
+      ))
+    },
   ],
   app:{
     head:{
