@@ -1,17 +1,20 @@
-<template>
-    <div>
-        <header>
-            <h1>Grooming</h1>
-            <nav>
-                <ul>                    
-                    <li><NuxtLink to="/grooming/inphographic">Infografía </NuxtLink></li>
-                    <li><NuxtLink to="/grooming/podcast">Podcast</NuxtLink></li>
-                    <li><NuxtLink to="/grooming/video">Video</NuxtLink></li>   
-                </ul>
-            </nav>
-        </header>        
-    </div>
+<template>    
+    <h1>Listado de infografías</h1>
+    <NuxtLayout :name="layout" :narrativeType="narrativeType">
+        <NuxtPage />
+    </NuxtLayout>
 </template>
-
-<script setup></script>
-<style scoped></style>
+<script setup>
+    const narrativeType = 'grooming'
+    const layout = 'narrative'
+</script>
+<!--template>
+    <h1>Listado de infografías</h1>
+    <NuxtLayout :name="layout">
+        <NuxtPage />
+    </NuxtLayout>
+</template>
+<script setup>
+    const narrativeType = 'ciberbullying'
+    const layout = 'inphographics'
+</script-->

@@ -3,7 +3,7 @@
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione consectetur dolores nulla totam optio quaerat harum cum repellat sit itaque soluta ad doloribus quis in maiores officiis, perferendis similique!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione consectetur dolores nulla totam optio quaerat harum cum repellat sit itaque soluta ad doloribus quis in maiores officiis, perferendis similique!</p>
-    </div>    
+    </div>       
 </template>
 
 <script setup>
