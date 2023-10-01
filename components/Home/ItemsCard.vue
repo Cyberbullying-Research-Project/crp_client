@@ -29,6 +29,7 @@
 <script setup>
 
 const router = useRouter();
+
 const { tabsCards, item } = defineProps(['tabsCards', 'item']);
 
 const { inphographic, podcast, video } = tabsCards;

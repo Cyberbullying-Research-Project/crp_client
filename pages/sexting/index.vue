@@ -1,9 +1,0 @@
-<template>    
-    <NuxtLayout :name="layout" :narrativeType="narrativeType">
-        <NuxtPage />
-    </NuxtLayout>
-</template>
-<script setup>
-    const narrativeType = 'sexting'
-    const layout = 'narrative'
-</script>

@@ -32,9 +32,9 @@
   const tab = ref('ciberbullying')
 
   const items = [
-    'ciberbullying',
+    'ciberbullying',    
+    'grooming',
     'sexting',
-    'grooming',    
   ]
   const textTab = {
     ciberbullying: {

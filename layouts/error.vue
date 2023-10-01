@@ -23,13 +23,13 @@
 </template>
 
 <script setup>
-    defineProps(['error']);
-
+    
     import { ref } from 'vue'
     const dialog = ref(true)
     
-    async function toHome() {
-        console.log('toHome')
+    defineProps(['error']);
+    
+    async function toHome() {        
         await navigateTo('/')        
     }
     
