@@ -11,10 +11,8 @@
                 </v-list-item>
 
                 <v-card-text>                                            
-                    <v-btn 
-                        class="me-2 text-none" color="#4f545c" :prepend-icon="typeToIcon[link]" variant="flat"
-                        v-for="link in links" :key="link" :text="link" :to="`/${narrativeType}/${link}`"
-                    >
+                    <v-btn class="me-2 text-none" color="#4f545c" :prepend-icon="typeToIcon[link]" variant="flat"
+                        v-for="link in links" :key="link" :text="link" :to="`/${narrativeLink}/${link}`">
                         {{ link }}
                     </v-btn>
                 </v-card-text>
@@ -28,7 +26,10 @@
 </template>
 <script setup>
 
-    const { narrativeType } = defineProps(['narrativeType']);
+    // const { narrativeType } = defineProps(['narrativeType']);
+    const route = useRoute();
+    const { narrative:narrativeLink } = route.params;
+    
     
     const typeToIcon = {
         infografías: 'mdi-presentation',
@@ -40,7 +41,7 @@
 
     const narrative = {
         id: 1,
-        title: narrativeType,
+        title: narrativeLink,
         body: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         user_id: 1,
         status: 'published',

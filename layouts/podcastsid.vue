@@ -1,4 +1,4 @@
-<template>    
-    <PodcastsList/>
+<template>
+    <PodcastsDetail/>
 </template>
 <script setup></script>

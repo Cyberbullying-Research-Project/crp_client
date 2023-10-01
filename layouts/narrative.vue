@@ -1,7 +1,9 @@
-<template>
-    <NarrativeHeaderCard :narrativeType="narrativeType"/>
-    <NarrativeReportCard/>
+<template>    
+    <NarrativeHeaderCard/>
 </template>
 <script setup>
-    const { narrativeType } = defineProps(['narrativeType']);
+    // const { narrative } = defineProps(['narrative']);
+    const route = useRoute();
+    const { narrative } = route.params;
+    
 </script>
