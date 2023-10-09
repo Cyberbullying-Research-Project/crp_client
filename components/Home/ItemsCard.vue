@@ -12,8 +12,8 @@
               </p>
             </v-card-text>
             <v-card-actions>
-              <v-spacer></v-spacer>             
-              <v-btn :prepend-icon="card.icon" variant="outlined"  @click="goItemsCard(`${item}${card.urlButton}`)">
+              <v-spacer></v-spacer>
+              <v-btn :prepend-icon="card.icon" variant="outlined"  @click="goItemsCard(`${item}${card.urlButton}`)">                
                 <template v-slot:prepend>
                   <v-icon color="success"></v-icon>
                 </template>
@@ -39,19 +39,19 @@ const cards = [
     title: 'Inphographic', 
     src: inphographic.image, 
     text: inphographic.text, icon: 'mdi-presentation',
-    urlButton: '/inphographic'
+    urlButton: '/inphographics'
   },
   { 
     title: 'Podcast', 
     src: podcast.image, 
     text: inphographic.text, icon: 'mdi-podcast',
-    urlButton: '/podcast'
+    urlButton: '/podcasts'
   },
   { 
     title: 'Video', 
     src: video.image, 
     text: inphographic.text, icon: 'mdi-video',
-    urlButton: '/video'
+    urlButton: '/videos'
   },
 ];
 
