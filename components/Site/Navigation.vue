@@ -22,7 +22,7 @@
           :prepend-icon="item.icon" 
           :title="item.title" 
           :value="item.value"
-          :to="item.path"
+          :to="item.value"          
           @click="appStore.hideDrawer"
         >
         </v-list-item>
@@ -41,27 +41,29 @@
   const authStore = useAuthStore();
   const drawer = computed(() => appStore.getDrawer);  
   const user = computed(() => authStore.user);
-  const router = useRouter();
-  console.log('user', user)
+  const router = useRouter();  
   const items = [
       { 
         title: 'Perfil', 
         value: '/profile', 
-        icon: 'mdi-account',
-        path: '/auth'
+        icon: 'mdi-account'
       },
       { 
         title: 'Contenido', 
         value: '/content', 
-        icon : 'mdi-book-open-page-variant',
-        path: ''
+        icon : 'mdi-book-open-page-variant'
       },
       { 
         title: 'Configuración', 
         value: '/config', 
-        icon: 'mdi-cog',
-        path: ''
+        icon: 'mdi-cog'
+      },
+      {
+        title: 'Chat',
+        value: '/chat',
+        icon: 'mdi-chat'
       }
+
   ];
   
   // on Logout

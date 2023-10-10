@@ -4,7 +4,7 @@
     <SiteNavigation v-if="isAuthenticated"/>
     <SiteBarItems/>
     <v-main>
-      <v-container>{{ user }}
+      <v-container>
         <slot />
       </v-container>
     </v-main>
