@@ -17,7 +17,16 @@ export default defineNuxtConfig({
         vuetify()
       ))
     },
-  ],  
+    'nuxt-socket-io',
+  ], io: {      
+      sockets: [
+        {
+          name: 'main',
+          url: 'http://localhost:4000',
+          default: true,
+        }
+      ],
+  },  
   app:{
     head:{
       title: 'Cyberbullying',
@@ -33,6 +42,5 @@ export default defineNuxtConfig({
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
     },
-  },
-  
+  }
 })
