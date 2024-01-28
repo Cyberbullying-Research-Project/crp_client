@@ -45,24 +45,25 @@
   const items = [
       { 
         title: 'Perfil', 
-        value: '/profile', 
+        value: '/auth', 
         icon: 'mdi-account'
       },
       { 
-        title: 'Contenido', 
-        value: '/content', 
+        title: 'Contenidos', 
+        value: '/contents', 
+        
         icon : 'mdi-book-open-page-variant'
       },
       { 
         title: 'Configuración', 
-        value: '/config', 
+        value: '/settings', 
         icon: 'mdi-cog'
-      },
+      }/*,
       {
         title: 'Chat',
         value: '/chat',
         icon: 'mdi-chat'
-      }
+      }*/
 
   ];
   
